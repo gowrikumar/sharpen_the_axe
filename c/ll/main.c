@@ -1,3 +1,5 @@
+/* gcc -Wall list.c main.c */
+
 #include "list.h"
 
 int main()
