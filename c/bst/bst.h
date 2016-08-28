@@ -1,6 +1,10 @@
 #ifndef _BST_H
 #define _BST_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 typedef int Element;
 
 typedef struct node {
@@ -9,13 +13,12 @@ typedef struct node {
 	struct node *right;
 } Node;
 
-typedef struct node* Node;
-typedef struct node* BST;
+typedef struct node* Tree;
 
-BST InsertBST(BST,Element);
-BST DeleteBST(BST,Element);
+Tree InsertBST(Tree,Element);
+Tree DeleteBST(Tree,Element);
 void InOrderBST(Tree);
 void PreOrderBST(Tree);
 void PostOrderBST(Tree);
-
+void PrintNode(Tree);
 #endif /* _BST_H */
